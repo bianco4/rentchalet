@@ -1,0 +1,83 @@
+2022-09-06 22:08:01,966 ERROR: Exception on /login [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 61, in login
+    next_page = url_for('home')
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/werkzeug/routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'user' instead?
+2022-09-06 22:09:21,974 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 22:13:14,756 ERROR: Exception on /edit_profile [GET] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 134, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/forms.py", line 47, in __init__
+    super(EditProfileForm, self).__init__(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 73, in __init__
+    super().__init__(formdata=formdata, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 280, in __init__
+    super().__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 48, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/meta.py", line 28, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 395, in bind
+    return self.field_class(*self.args, **kw)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 113, in __init__
+    self.check_validators(validators)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 177, in check_validators
+    for validator in validators:
+TypeError: 'EqualTo' object is not iterable
+2022-09-06 22:16:41,568 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 22:16:59,106 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 22:45:19,742 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 22:48:53,036 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 23:05:11,135 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 23:06:09,031 ERROR: Exception on /admin [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 202, in admin
+    if form.validate_on_submit():
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+TypeError: PeriodForm.validate_end() takes 1 positional argument but 2 were given

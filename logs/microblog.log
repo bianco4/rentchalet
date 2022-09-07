@@ -1,0 +1,104 @@
+2022-09-06 23:06:38,104 ERROR: Exception on /admin [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 202, in admin
+    if form.validate_on_submit():
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+TypeError: PeriodForm.validate_end() takes 1 positional argument but 2 were given
+2022-09-06 23:11:13,047 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 23:11:18,093 ERROR: Exception on /admin [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 202, in admin
+    if form.validate_on_submit():
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+TypeError: PeriodForm.validate_end() takes 1 positional argument but 2 were given
+2022-09-06 23:11:24,516 ERROR: Exception on /admin [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 202, in admin
+    if form.validate_on_submit():
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+TypeError: PeriodForm.validate_end() takes 1 positional argument but 2 were given
+2022-09-06 23:12:45,425 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-06 23:12:56,708 ERROR: Exception on /admin [POST] [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/routes.py", line 202, in admin
+    if form.validate_on_submit():
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/chalenv/lib/python3.10/site-packages/wtforms/fields/core.py", line 262, in _run_validation_chain
+    validator(form, self)
+TypeError: PeriodForm.validate_end() takes 1 positional argument but 2 were given
+2022-09-06 23:14:09,562 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/Tests/RentChalet WIP/app/__init__.py:47]
+2022-09-07 18:27:15,685 INFO: Microblog startup [in /Users/danielbianco/Documents/Flask/PA/RentChalet WIP/app/__init__.py:47]

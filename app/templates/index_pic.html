@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<html>
+    <h1>Herzlich Willkommen, viel Spass im Chalet!</h1>
+    <img src="{{url_for('static', filename='IMG_8466.JPG')}}" width="400" height="293">
+</html>
+
+  <!--
+    <h1>Hallo {{ current_user.username }}! Das sind die verfügbaren Wochen</h1>
+    {% if form %}
+    {{ wtf.quick_form(form) }}
+    <br>
+    {% endif %}
+
+    {% for line in lines %}
+    <table class="table table-hover">
+        <tr>
+            <td width="70px">
+            Von {{ line.begin.strftime('%d.%m.%Y') }} 
+            bis {{ line.end.strftime('%d.%m.%Y') }} 
+            </td> 
+        </tr>
+    </table> 
+    {% endfor %}
+
+  
+        
+        
+        {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous{% if not prev_url %} disabled{% endif %}">
+                <a href="{{ prev_url or '#' }}">
+                    <span aria-hidden="true">&larr;</span> Newer posts
+                </a>
+            </li>
+            <li class="next{% if not next_url %} disabled{% endif %}">
+                <a href="{{ next_url or '#' }}">
+                    Older posts <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    -->
+    </nav>
+{% endblock %}
